@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100dvh;
+}
+
+section header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+section header .logo{
+    font-size: 38px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+section header .logo span{
+    color: #f9004d;
+}
+
+section header ul{
+    list-style: none;
+}
+
+section header ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 5px;
+}
+section header ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+section header ul li a:hover{
+    color: #f9004d;
+}
+
+section header p{
+    padding: 5px 25px;
+    font-size: 20px;
+    border: 1px solid #f9004d;
+    border-radius: 3cap;
+    cursor: pointer;
+    transition: 0.3.s;
+    margin-right: 80px;
+}
+
+section header p:hover{
+    background-color: rgba(179, 105, 130);
+    color: white;
+    border: none;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 105, 130);
+    z-index: -1;
+    clip-path: circle(320px at left -240px);
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(179, 105, 130);
+    z-index: -1;
+    clip-path: circle(250px at right 900px);
+}
+
+.texts h1{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #606666;
+}
+
+.texts h1 span{
+    color: #b36982;
+}
+
+.texts p{
+    position: absolute;
+    top: 45%;
+    left: 4%;
+    width: 650px;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+section .background-image img{
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    width: 750px;
+    margin-left: 25px;
+}
+
+section .btn{
+    position: relative;
+    left: 6%;
+    top: 71%;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+section .btn p{
+    padding: 10px 25px;
+    background: none;
+    border: 2px solid #b36982;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .btn .read{
+    background: #b36982;
+    cursor: pointer;
+    color: white;
+    transition: .3s;
+}
+
+.about{
+    width: 100%;
+    height: 240vh;
+    padding: 50px;
+}
+
+.about .box{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.about .box .card{
+    width: 170px;
+    height: auto;
+    padding: 5px 10px;
+    margin: 0 15px;
+    background: gainsboro;
+    border: 1px solid gainsboro;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.about .box .card:hover{
+    box-shadow:  3px 5px 20px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.about .box .card img{
+    width: 150px;
+}
+.about hr{
+    height: 2px;
+    border-radius: 10px;
+    background-color: #b36982;
+    margin: 30px 110px;
+}
+
+.about .clothes h1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about .clothes p{
+    margin: 32px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.about .clothes_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:15px;
+}
+
+.about .clothes_box .clothes_card{
+    background-color: #9d9d9d;
+    width: 350px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.about .clothes_box .clothes_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+.about .clothes .clothes_box img{
+    width: 230px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about .clothes .clothes_box img:hover{
+    transform: scale(1.1);
+}
+
+.about .clothes .clothes_box h1{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.about .clothes .clothes_box p{
+    color: #fff;
+    margin: 15px 0;
+}
+
+.about .clothes .clothes_box .btn{
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.about .food p{
+    color: #473f3f;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 25px 0;
+    font-size: 25px;
+}
+
+.about .food_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.about .food_box .food_card{
+    background-color: #9d9d9d;
+    width: 350px;
+    padding: 25px 25px;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.about .food_box .food_card:hover{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+.about .food_box .food_card img{
+    width: 250px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.about .food_box .food_card img:hover{
+    transform: scale(1.1);
+}
+
+.about .food_box .food_card h1{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.about .food_box .food_card p{
+    color: #fff;
+}
+
+.about .food_box .food_card .btn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: red;
+    padding: 20px 30px;
+    border-radius: 20px;
+    transform: 0.3s;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 50px;
+}
+
+.footer .main{
+    max-width: 1170px;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer_col h4{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+.footer_col ul li{
+    margin-bottom: 20px;
+}
+
+.footer_col ul li a{
+    text-decoration: none;
+    color: #6b6b6b;
+    cursor: pointer;
+}
+.footer_col .social img{
+    width: 20px;
+    margin: 5px;
+}
